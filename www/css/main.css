@@ -1,0 +1,265 @@
+
+/*tags styles*/
+
+  body {
+    background: rgba(211,227,240,1);
+    font-family: arial,sans-serif;
+    line-height: 15px;
+  }
+
+  input {
+    height: 57px;
+    border: solid 0px;
+    border-radius: 10px;
+    padding: 9px 32px;
+    font-size: 20px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  a:link, a:visited, a:active {
+    color: cornflowerblue;
+  }
+
+  h1 {
+    color: darkgray;
+  }
+
+  h3 {
+    font-size: 18px;
+    margin: 7px 0;
+  }
+
+  p {
+    margin: 7px 0;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+
+
+/*class styles*/
+
+  /*grid system and orientation*/
+
+    .grid-content {
+      height: auto;
+    }
+
+    .results-section {
+      position: relative;
+      background-color: white;
+      height: auto;
+      padding: 10px 20px 20px;
+    }
+
+
+  /*components*/
+
+    #search-input {
+      float: left;
+    }
+
+      #search-input:focus {
+        background-color: cornsilk;
+      }
+
+    #search-button {
+      float: right;
+      background-color: aliceblue;
+      color: lightsteelblue;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+      #search-button:hover {
+        background-color: cornflowerblue;
+        color: white;
+      }
+
+    #pagination-web, #pagination-img {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+
+    #imgs-wall, #list-web-results {
+      margin-bottom: 30px;
+    }
+
+  /*looks styles*/
+
+    .results-borders {
+      border: solid 0px;
+      border-color: gainsboro;
+      border-radius: 20px;
+    }
+
+    .img-result {
+      display: inline-block;
+      left: 0;
+      right: 0;
+      margin: 2px;
+      margin-right: auto;
+      /*margin: 2px;
+      margin-right: 4px;
+      float: inline-start;*/
+    }
+
+    .web-result {
+      left: 0;
+      right: 0;
+      margin: 0 auto 10px;
+      width: 90%;
+      background-color: ghostwhite;
+      border-radius: 15px;
+      padding: 10px 15px;
+      text-align: left;
+    }
+
+
+/*media queries*/
+
+  @media screen and (min-width: 0px) and (max-width: 425px) {
+
+    .grid-content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .results-section {
+      display: block;
+      margin-top: 10px;
+    }
+
+    #google-results {
+      flex-direction: column-reverse;
+    }
+
+    #search-button {
+      width: 100%;
+      background-color: cornflowerblue;
+      color: white;
+    }
+
+    #search-input {
+      width: 100%;
+    }
+
+    .results-borders {
+      border: solid 0px;
+      border-radius: 4px;
+    }
+
+    body {
+      background: rgba(211,227,240,1);
+    }
+
+    input {
+      height: 57px;
+      border: solid 0px;
+      border-radius: 4px;
+      padding: 9px;
+      font-size: 20px;
+    }
+
+  }
+
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+
+    .grid-content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .results-section {
+      display: block;
+      margin-top: 10px;
+    }
+
+    .results-borders {
+      border: solid 0px;
+      border-radius: 15px;
+    }
+
+    #google-results {
+      flex-direction: column-reverse;
+    }
+
+    #search-button {
+      width: 26%;
+      background-color: cornflowerblue;
+      color: white;
+    }
+
+    #search-input {
+      width: 72%;
+    }
+
+    body {
+      background: rgba(211,227,240,1);
+    }
+
+    input {
+      height: 57px;
+      border: solid 0px;
+      border-radius: 7px;
+      padding: 9px 32px;
+      font-size: 20px;
+    }
+
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1279px) {
+
+    .grid-content {
+      display: table;
+      border-spacing: 20px 10px;
+      width: 100%;
+    }
+
+    .results-section {
+      display: table-cell;
+      width: 40%;
+    }
+
+    #search-button {
+      width: 24%;
+    }
+
+    #search-input {
+      width: 74%;
+    }
+
+  }
+
+  @media screen and (min-width: 1280px) {
+
+    .grid-content {
+      display: table;
+      border-spacing: 20px 10px;
+      width: 1280px;
+    }
+
+    .results-section {
+      display: table-cell;
+      width: 40%;
+    }
+
+    #search-button {
+      width: 20%;
+    }
+
+    #search-input {
+      width: 79%;
+    }
+
+  }
