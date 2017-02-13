@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Google Search Page</title>
+  <title>GoogleSearchPage</title>
   <link rel="stylesheet" href="css/main.css">
   <script data-main="app" src="lib/require.js"></script>
 </head>
@@ -10,112 +10,36 @@
   <center>
     <div id="grid-app" class="grid-content">
       <header id="google-search" class="grid-content">
-        <form id="search-form" class="" action="" method="GET" action="">
-          <input id="search-input" value="" placeholder="Search..." type="search" autocomplete="on" name="googlesearch">
-          <input id="search-button" value="SEARCH" type="submit">
-        </form>
+        <input id="search-input" value="" placeholder="Search..." type="search" autocomplete="off" name="googlesearch">
+        <input id="search-button" value="SEARCH" type="button">
       </header>
       <div id="google-results" class="grid-content">
-        <section  id="results-img" class="results-section results-borders">
+        <section  id="results-img" class="results-section results-borders" style="visibility:hidden;">
           <center>
             <header>
-              <h1>Image result</h1>
+              <h1>IMAGE RESULTS</h1>
             </header>
             <div id="imgs-wall">
-              <figure class="img-result">
-                <a href="#">
-                  <img src="http://placehold.it/141x183" alt="image name">
-                </a>
-              </figure>
-              <figure class="img-result">
-                <img src="http://placehold.it/141x183" alt="">
-              </figure>
-              <figure class="img-result">
-                <img src="http://placehold.it/141x183" alt="">
-              </figure>
-              <figure class="img-result">
-                <img src="http://placehold.it/341x183" alt="">
-              </figure>
-              <figure class="img-result">
-                <img src="http://placehold.it/141x183" alt="">
-              </figure>
-              <figure class="img-result">
-                <img src="http://placehold.it/91x183" alt="">
-              </figure>
-              <figure class="img-result">
-                <img src="http://placehold.it/241x183" alt="">
-              </figure>
-              <figure class="img-result">
-                <img src="http://placehold.it/141x183" alt="">
-              </figure>
             </div>
-            <footer>
+            <footer class="pagination-section">
               <nav id="pagination-img">
-                <table>
-                  <tbody>
-                    <tr valign="top">
-                      <td class="">
-                        <a href="#">
-                          1
-                        </a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
               </nav>
             </footer>
           </center>
         </section>
-        <section id="results-web" class="results-section results-borders">
+        <section id="results-web" class="results-section results-borders" style="visibility:hidden;">
           <center>
             <header>
-              <h1>Web result</h1>
+              <h1>WEB RESULTS</h1>
             </header>
           </center>
-          <div id="list-web-results">
-            <ul>
-              <li>
-                <article class="web-result">
-                  <header>
-                    <h3>Example</h3>
-                  </header>
-                  <cite>
-                    <a href="#">http://www.example.com</a>
-                  </cite>
-                  <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<p>
-                  </div>
-                </article>
-              </li>
-              <li>
-                <article class="web-result">
-                  <header>
-                    <h3>Example</h3>
-                  </header>
-                  <cite>
-                    <a href="#">http://www.example.com</a>
-                  </cite>
-                  <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<p>
-                  </div>
-                </article>
-              </li>
+          <div>
+            <ul id="list-web-results">
             </ul>
           </div>
           <center>
-            <footer>
+            <footer class="pagination-section">
               <nav id="pagination-web">
-                <table>
-                  <tbody>
-                    <tr valign="top">
-                      <td class="">
-                        <a href="#">
-                          1
-                        </a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
               </nav>
             </footer>
           </center>
